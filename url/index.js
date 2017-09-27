@@ -1,5 +1,3 @@
-let http = require('http');
-http.createServer((req,res)=>{
-	
-	 res.end('finsh','utf8');
-}).listen(80);
+let url = require('./url.js');
+let u = new url();
+u._querylog();
